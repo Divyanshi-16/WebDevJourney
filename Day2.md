@@ -30,3 +30,49 @@
     <a href="#top">Jump to Top</a>
   </body>
 </html>
+
+
+## HTML Tables
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table, th, td{border: 1px solid black;
+                    border-radius: 10px;
+                    <!-- To avoid double borders, use:-border-collapse: collapse; -->
+                    border-style:outset;
+                    border-color: red;}
+      th, td{background-color: cyan; padding: 15px; border-spacing: 30px}
+      tr:nth-child(even) {background-color: blue;}
+      th:nth-child(even), td:nth-child(even) {background-color: red;}
+    </style>
+  </head>
+<body>
+  <table>
+    <caption>Employees' Details</caption>
+    <tr>
+      <th style="width:50%" text-align: center;>Serial Number</th>
+      <th colspan="2">Name</th>
+      <th>Company</th>
+      <th>City</th>
+      <th>Country</th>
+    </tr>
+    <tr style="height:70%">
+      <th>1</th>
+      <td>Adam</td>
+      <td>Smith</td>
+      <td>Google</td>
+      <td>New York City</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>Meta</td>
+      <td>London</td>
+      <td>UK</td>
+    </tr>
+  </table>
+</body>
+</html>
